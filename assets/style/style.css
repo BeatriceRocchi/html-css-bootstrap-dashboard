@@ -25,6 +25,10 @@ h1,
   display: inline-block;
 }
 
+h2 {
+  font-size: 1.5rem;
+}
+
 /* Utilities */
 .debug {
   background-color: rgba(50, 205, 50, 0.5);
@@ -104,7 +108,7 @@ aside nav li i {
 
 /* Lower dashboard */
 .lower_dashboard {
-  background-color: var(---color-alert);
+  background-color: var(---color-secondary);
 }
 
 /* Next classes */
