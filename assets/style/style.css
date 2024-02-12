@@ -44,6 +44,7 @@ header .header_wrapper {
 
 .search_box input {
   width: 90%;
+  font-size: 0.7rem;
 }
 
 .search_box input::placeholder {
@@ -63,8 +64,19 @@ main {
   height: calc(100% - 70px);
 }
 
+/* Aside */
 aside {
   width: 65px;
+  padding: 32px 0px;
+  background: linear-gradient(
+    45deg,
+    var(---color-primary-dark) 65%,
+    var(---color-primary-extra-dark) 65%
+  );
+}
+
+aside nav li i {
+  width: 12px;
 }
 
 /* --------- Media -----------
