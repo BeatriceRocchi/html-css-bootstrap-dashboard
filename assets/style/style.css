@@ -1,10 +1,21 @@
 /* General */
 :root {
+  ---color-primary: #1b72e8;
+  ---color-primary-dark: #13293f;
+  ---color-primary-extra-dark: #051e34;
+  ---color-secondary: #f8f9fa;
+  ---color-secondary-dark: #e5e5e5;
+  ---color-white: #fff;
+  ---color-alert: #ff8f00;
+
+  ---text-color-medium: #5b5858;
+
   ---font-family: "Roboto", sans-serif;
 }
 
 body {
   font-family: var(---font-family);
+  font-size: 0.8rem;
 }
 
 /* Utilities */
@@ -16,6 +27,35 @@ body {
 /* Header */
 header {
   height: 70px;
+  background-color: var(---color-secondary);
+}
+
+header .header_wrapper {
+  background-color: var(---color-white);
+  height: 50px;
+  padding: 0 12px;
+}
+
+.search_box,
+.search_box input {
+  background-color: var(---color-secondary-dark);
+  height: 40px;
+}
+
+.search_box input {
+  width: 90%;
+}
+
+.search_box input::placeholder {
+  color: var(---text-color-medium);
+}
+
+header nav li i {
+  color: var(---text-color-medium);
+}
+
+.alert_bell {
+  color: var(---color-alert);
 }
 
 /* Main */

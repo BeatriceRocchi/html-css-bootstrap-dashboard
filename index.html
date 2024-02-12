@@ -39,24 +39,55 @@
     <title>Bootstrap Dashboard</title>
   </head>
   <body class="vh-100">
-    <header class="debug d-flex align-items-center justify-content-between">
-      <div class="debug d-none d-lg-block">Logo Desktop</div>
-      <div class="debug d-lg-none">LogoM</div>
-      <div class="debug flex-grow-1">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" />
-      </div>
-      <div class="debug d-flex">
-        <nav class="d-none d-lg-block">
-          <ul class="list-unstyled d-flex mb-0">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-          </ul>
-        </nav>
-        <div>Alert</div>
+    <header class="d-flex align-items-center">
+      <div
+        class="header_wrapper d-flex align-items-center justify-content-between w-100"
+      >
+        <!-- Logo -->
+        <div class="d-lg-none h-100">
+          <img
+            class="logo_mobile h-100"
+            src="./assets/img/mobile-logo.png"
+            alt="Logo Boolean"
+          />
+        </div>
+        <div class="d-none d-lg-block">
+          <img
+            class="logo_desktop"
+            src="./assets/img/logo.svg"
+            alt="Logo Boolean"
+          />
+        </div>
+        <!-- / Logo -->
+
+        <!-- Search -->
+        <div class="search_box flex-grow-1 px-2 mx-3 rounded-1">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            class="border-0"
+            type="text"
+            placeholder="Prova a cercare: Lezioni di Laravel"
+          />
+        </div>
+        <!-- / Search -->
+
+        <!-- Menu -->
+        <div class="d-flex align-items-center">
+          <nav class="d-none d-lg-block">
+            <ul class="list-unstyled d-flex mb-0">
+              <li class="pe-4"><i class="fa-solid fa-list-ul"></i></li>
+              <li class="pe-4"><i class="fa-solid fa-circle-question"></i></li>
+              <li class="pe-4">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </li>
+            </ul>
+          </nav>
+          <i class="alert_bell fa-solid fa-bell"></i>
+        </div>
+        <!-- / Menu -->
       </div>
     </header>
+
     <main>
       <div class="d-flex h-100">
         <aside class="debug flex-shrink-0">1</aside>
