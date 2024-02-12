@@ -1,6 +1,7 @@
 /* General */
 :root {
   ---color-primary: #1b72e8;
+  ---color-primary-medium: #165bba;
   ---color-primary-dark: #13293f;
   ---color-primary-extra-dark: #051e34;
   ---color-secondary: #f8f9fa;
@@ -16,6 +17,12 @@
 body {
   font-family: var(---font-family);
   font-size: 0.8rem;
+}
+
+h1,
+.students_number {
+  font-size: 1.5rem;
+  display: inline-block;
 }
 
 /* Utilities */
@@ -90,9 +97,14 @@ aside nav li i {
   width: 100%;
 }
 
+.my_badge {
+  background-color: var(---color-primary-medium);
+  font-weight: 400;
+}
+
 /* --------- Media -----------
 ------------ query ---------*/
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   aside {
     width: 150px;
   }

@@ -44,14 +44,14 @@
         class="header_wrapper d-flex align-items-center justify-content-between w-100"
       >
         <!-- Logo -->
-        <div class="d-lg-none h-100">
+        <div class="d-xl-none h-100">
           <img
             class="logo_mobile h-100"
             src="./assets/img/mobile-logo.png"
             alt="Logo Boolean"
           />
         </div>
-        <div class="d-none d-lg-block">
+        <div class="d-none d-xl-block">
           <img
             class="logo_desktop"
             src="./assets/img/logo.svg"
@@ -73,7 +73,7 @@
 
         <!-- Menu -->
         <div class="d-flex align-items-center">
-          <nav class="d-none d-lg-block">
+          <nav class="d-none d-xl-block">
             <ul class="list-unstyled d-flex mb-0">
               <li class="pe-4"><i class="fa-solid fa-list-ul"></i></li>
               <li class="pe-4"><i class="fa-solid fa-circle-question"></i></li>
@@ -99,30 +99,31 @@
             <ul class="list-unstyled mb-0">
               <li class="pb-3">
                 <i class="fa-solid fa-house"></i>
-                <span class="d-none d-lg-inline ps-3">Home</span>
+                <span class="d-none d-xl-inline ps-3">Home</span>
               </li>
               <li class="pb-3">
                 <i class="fa-solid fa-chart-simple"></i>
-                <span class="d-none d-lg-inline ps-3">Stats</span>
+                <span class="d-none d-xl-inline ps-3">Stats</span>
               </li>
               <li>
                 <i class="fa-solid fa-signal"></i>
-                <span class="d-none d-lg-inline ps-3">Signals</span>
+                <span class="d-none d-xl-inline ps-3">Signals</span>
               </li>
             </ul>
           </nav>
           <div>
             <i class="fa-solid fa-gear"></i>
-            <span class="d-none d-lg-inline ps-3">Admin</span>
+            <span class="d-none d-xl-inline ps-3">Admin</span>
           </div>
         </aside>
 
         <div class="flex-grow-1 overflow-y-scroll">
           <!-- Upper dashboard -->
           <div class="upper_dashboard container-fluid py-4 text-white">
-            <div class="row row-cols-1 row-cols-md-3 align-items-center">
-              <div class="order-md-1 col-lg-3">
-                <span>Nuovo Studente</span>
+            <div class="row row-cols-1 row-cols-md-3">
+              <!-- New student -->
+              <div class="order-md-1 col-xl-3">
+                <span class="d-inline-block mb-4 mb-md-0">Nuovo Studente</span>
                 <button
                   class="btn btn-outline-light ms-3"
                   type="button"
@@ -156,8 +157,37 @@
                 </div>
                 <!-- / Offcanvas -->
               </div>
-              <div class="debug col-lg-6">Booelan</div>
-              <div class="debug col-lg-3">Studenti</div>
+              <!-- / New student -->
+
+              <!-- Bolean -->
+              <div class="col-xl-6">
+                <h1>Boolean</h1>
+                <span class="badge rounded-pill my_badge">Piano blaze</span>
+                <div class="mb-4 mb-md-0">
+                  <span class="badge rounded-pill my_badge">3 app</span>
+                  <i class="align-middle fa-solid fa-angles-right"></i>
+                  <span class="badge rounded-pill my_badge d-xl-none">+</span>
+                  <span class="badge rounded-pill my_badge d-none d-xl-inline"
+                    >Boolean mobile app</span
+                  >
+                  <span class="badge rounded-pill my_badge d-none d-xl-inline"
+                    >Boolean web app</span
+                  >
+                  <span class="badge rounded-pill my_badge d-none d-xl-inline"
+                    >Boolean blog app</span
+                  >
+                </div>
+              </div>
+              <!-- / Bolean -->
+
+              <!-- Students -->
+              <div class="col-xl-3">
+                <span class="mb-4 mb-md-0"
+                  >Studenti online negli ultimi 30 minuti <br />
+                  <div class="students_number">125</div>
+                </span>
+              </div>
+              <!-- / Students -->
             </div>
           </div>
           <!-- / Upper dashboard -->
