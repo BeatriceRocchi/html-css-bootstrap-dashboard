@@ -102,6 +102,25 @@ aside nav li i {
   font-weight: 400;
 }
 
+/* Lower dashboard */
+.lower_dashboard {
+  background-color: var(---color-alert);
+}
+
+/* Next classes */
+.lower_dashboard .container-fluid {
+  width: 95%;
+}
+
+.lower_dashboard #next_classes .row {
+  border-bottom: 1px solid var(---color-secondary-dark);
+  padding: 8px 0;
+}
+
+.my_avatar {
+  height: 30px;
+}
+
 /* --------- Media -----------
 ------------ query ---------*/
 @media screen and (min-width: 1200px) {
