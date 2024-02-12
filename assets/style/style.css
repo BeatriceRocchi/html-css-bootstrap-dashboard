@@ -68,15 +68,26 @@ main {
 aside {
   width: 65px;
   padding: 32px 0px;
-  background: linear-gradient(
+  background-image: url(../img/sidebar-bg.png);
+  background-color: var(---color-primary-dark);
+  /* background: linear-gradient(
     45deg,
     var(---color-primary-dark) 65%,
     var(---color-primary-extra-dark) 65%
-  );
+  ); Note: not necessary, as there is a background image given*/
 }
 
 aside nav li i {
   width: 12px;
+}
+
+/* Upper dashboard */
+.upper_dashboard {
+  background-color: var(---color-primary);
+}
+
+.upper_dashboard .offcanvas_width {
+  width: 100%;
 }
 
 /* --------- Media -----------
@@ -84,5 +95,9 @@ aside nav li i {
 @media screen and (min-width: 992px) {
   aside {
     width: 150px;
+  }
+
+  .upper_dashboard .offcanvas_width {
+    width: 50%;
   }
 }
