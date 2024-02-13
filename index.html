@@ -152,8 +152,123 @@
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="offcanvas-body">...</div>
-                  <!-- TODO: inserire contenuto form -->
+                  <div class="offcanvas-body">
+                    <!-- Form -->
+                    <form class="row g-3">
+                      <!-- Name and surname -->
+                      <div class="col-md-6">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="name" />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="surname" class="form-label">Cognome</label>
+                        <input type="text" class="form-control" id="surname" />
+                      </div>
+
+                      <!-- Email1 -->
+                      <div class="col-md-6">
+                        <label for="email1" class="form-label">Email</label>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text">@</span>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="email1"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="password1" class="form-label"
+                          >Password</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="password1"
+                        />
+                      </div>
+
+                      <!-- Email2 -->
+                      <div class="col-md-6">
+                        <label for="email2" class="form-label">Email</label>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text">@</span>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="email2"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="password2" class="form-label"
+                          >Password</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="password2"
+                        />
+                      </div>
+
+                      <!-- Address -->
+                      <div class="col-12">
+                        <label for="address" class="form-label"
+                          >Indirizzo</label
+                        >
+                        <input type="text" class="form-control" id="address" />
+                      </div>
+
+                      <!-- City and State -->
+                      <div class="col-md-6">
+                        <label for="city" class="form-label">Città</label>
+                        <input type="text" class="form-control" id="city" />
+                      </div>
+
+                      <div class="col-md-4">
+                        <label for="state" class="form-label">Stato</label>
+                        <select id="state" class="form-select">
+                          <option selected>Scegli...</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+
+                      <div class="col-md-2">
+                        <label for="zip" class="form-label">CAP</label>
+                        <input type="text" class="form-control" id="zip" />
+                      </div>
+
+                      <!-- Upload file -->
+                      <div class="col-12">
+                        <label for="file" class="form-label">Foto</label>
+                        <input class="form-control" type="file" id="formFile" />
+                      </div>
+
+                      <!-- Check -->
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="gridCheck"
+                          />
+                          <label class="form-check-label" for="gridCheck">
+                            Seleziona per proseguire
+                          </label>
+                        </div>
+                      </div>
+
+                      <!-- Save / reset -->
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-primary">
+                          Salva
+                        </button>
+                        <button type="reset" class="btn btn-warning">
+                          Svuota
+                        </button>
+                      </div>
+                    </form>
+                  </div>
                 </div>
                 <!-- / Offcanvas -->
               </div>

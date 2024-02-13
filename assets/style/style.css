@@ -129,6 +129,12 @@ aside nav li i {
   height: 30px;
 }
 
+/* Form */
+form label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 .my_btn {
   padding: 8px;
   font-size: 0.8rem;
@@ -145,6 +151,6 @@ aside nav li i {
   }
 
   .upper_dashboard .offcanvas_width {
-    width: 50%;
+    width: 40%;
   }
 }
