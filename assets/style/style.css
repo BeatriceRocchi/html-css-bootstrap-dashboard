@@ -6,6 +6,7 @@
   ---color-primary-extra-dark: #051e34;
   ---color-secondary: #f8f9fa;
   ---color-secondary-dark: #e5e5e5;
+  ---color-hover: #9b9b9b;
   ---color-white: #fff;
   ---color-alert: #ff8f00;
 
@@ -31,12 +32,6 @@ h2 {
 
 h3 {
   font-size: 1rem;
-}
-
-/* Utilities */
-.debug {
-  background-color: rgba(50, 205, 50, 0.5);
-  border: 1px solid gray;
 }
 
 /* Header */
@@ -94,6 +89,12 @@ aside {
 
 aside nav li i {
   width: 12px;
+}
+
+aside nav li:hover,
+aside .admin_box:hover {
+  cursor: pointer;
+  background-color: var(---color-hover);
 }
 
 /* Upper dashboard */
