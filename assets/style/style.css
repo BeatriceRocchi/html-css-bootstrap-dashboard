@@ -163,6 +163,10 @@ form #basic-addon1 {
   color: var(---color-primary);
 }
 
+.lower_dashboard #faq .accordion-button:not(.collapsed)::after {
+  filter: invert(35%) sepia(73%) saturate(2891%) hue-rotate(203deg) brightness(93%) contrast(95%);
+}
+
 .lower_dashboard #todo ul,
 .lower_dashboard #stats ul {
   border: 1px solid var(---color-secondary-dark);
