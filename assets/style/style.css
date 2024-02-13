@@ -125,6 +125,10 @@ aside nav li i {
   padding: 8px 0;
 }
 
+.lower_dashboard #next_classes .row .col {
+  min-width: 100px;
+}
+
 .lower_dashboard #faq button {
   font-size: 0.8rem;
 }
@@ -136,6 +140,14 @@ aside nav li i {
 
 .my_avatar {
   height: 30px;
+}
+
+.my_btn {
+  padding: 8px;
+  font-size: 0.8rem;
+  width: 30px;
+  height: 30px;
+  margin: 0 2.5px;
 }
 
 /* --------- Media -----------
