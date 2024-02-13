@@ -22,7 +22,7 @@ body {
 
 h1,
 .students_number {
-  font-size: 1.5rem;
+  font-size: 2rem;
   display: inline-block;
 }
 
@@ -32,6 +32,19 @@ h2 {
 
 h3 {
   font-size: 1rem;
+}
+
+/* Buttons */
+.my_btn {
+  padding: 8px;
+  font-size: 0.8rem;
+  width: 30px;
+  height: 30px;
+  margin: 0 2.5px;
+}
+
+.my_form_btn {
+  font-size: 0.8rem;
 }
 
 /* Header */
@@ -46,18 +59,18 @@ header .header_wrapper {
   padding: 0 12px;
 }
 
-.search_box,
-.search_box input {
+header .search_box,
+header .search_box input {
   background-color: var(---color-secondary-dark);
   height: 40px;
 }
 
-.search_box input {
+header .search_box input {
   width: 90%;
   font-size: 0.7rem;
 }
 
-.search_box input::placeholder {
+header .search_box input::placeholder {
   color: var(---text-color-medium);
 }
 
@@ -110,13 +123,25 @@ aside .admin_box:hover {
   width: 100%;
 }
 
-.my_badge {
+.upper_dashboard .my_badge {
   background-color: var(---color-primary-medium);
   font-weight: 400;
 }
 
-.my_badge:hover {
+.upper_dashboard .my_badge:hover {
   background-color: var(---color-primary-dark);
+}
+
+/* Form */
+form label {
+  font-weight: 500;
+}
+
+form .form-select,
+form .form-control,
+form #basic-addon1 {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
 }
 
 /* Lower dashboard */
@@ -124,8 +149,13 @@ aside .admin_box:hover {
   background-color: var(---color-secondary);
 }
 
-/* Next classes */
-.lower_dashboard #faq button {
+.lower_dashboard #next_classes .my_avatar {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.lower_dashboard #faq .accordion button {
   font-size: 0.8rem;
 }
 
@@ -136,26 +166,6 @@ aside .admin_box:hover {
 .lower_dashboard #todo ul,
 .lower_dashboard #stats ul {
   border: 1px solid var(---color-secondary-dark);
-}
-
-.my_avatar {
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-}
-
-/* Form */
-form label {
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.my_btn {
-  padding: 8px;
-  font-size: 0.8rem;
-  width: 30px;
-  height: 30px;
-  margin: 0 2.5px;
 }
 
 /* --------- Media -----------
