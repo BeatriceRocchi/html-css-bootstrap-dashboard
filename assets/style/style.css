@@ -116,19 +116,6 @@ aside nav li i {
 }
 
 /* Next classes */
-.lower_dashboard .container-fluid {
-  width: 95%;
-}
-
-.lower_dashboard #next_classes .row {
-  border-bottom: 1px solid var(---color-secondary-dark);
-  padding: 8px 0;
-}
-
-.lower_dashboard #next_classes .row .col {
-  min-width: 100px;
-}
-
 .lower_dashboard #faq button {
   font-size: 0.8rem;
 }
