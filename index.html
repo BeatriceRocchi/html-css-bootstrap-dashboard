@@ -83,13 +83,20 @@
             </ul>
           </nav>
 
-          <div class="notification_box">
-            &#128276;
-            <div class="option_menu text-black px-3 py-2 d-none rounded-2">
-              <div class="my-1">Profilo</div>
-              <div class="my-1">Fatturazione</div>
-              <div class="my-1">Logout</div>
-            </div>
+          <div class="dropdown">
+            <button
+              class="btn border-0 ps-0"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fa-solid fa-bell"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Profilo</a></li>
+              <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
           </div>
         </div>
         <!-- / Menu -->
@@ -171,49 +178,22 @@
                         <input type="text" class="form-control" id="surname" />
                       </div>
 
-                      <!-- Email1 -->
+                      <!-- Email -->
                       <div class="col-md-6">
-                        <label for="email1" class="form-label">Email</label>
+                        <label for="email" class="form-label">Email</label>
                         <div class="input-group mb-3">
                           <span class="input-group-text">@</span>
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="email1"
-                          />
+                          <input type="email" class="form-control" id="email" />
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <label for="password1" class="form-label"
+                        <label for="password" class="form-label"
                           >Password</label
                         >
                         <input
                           type="password"
                           class="form-control"
-                          id="password1"
-                        />
-                      </div>
-
-                      <!-- Email2 -->
-                      <div class="col-md-6">
-                        <label for="email2" class="form-label">Email</label>
-                        <div class="input-group mb-3">
-                          <span class="input-group-text">@</span>
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="email2"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <label for="password2" class="form-label"
-                          >Password</label
-                        >
-                        <input
-                          type="password"
-                          class="form-control"
-                          id="password2"
+                          id="password"
                         />
                       </div>
 
@@ -247,7 +227,7 @@
                       <!-- Upload file -->
                       <div class="col-12">
                         <label for="file" class="form-label">Foto</label>
-                        <input class="form-control" type="file" id="formFile" />
+                        <input class="form-control" type="file" id="file" />
                       </div>
 
                       <!-- Check -->

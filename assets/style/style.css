@@ -65,19 +65,12 @@ header nav li i {
   color: var(---text-color-medium);
 }
 
-.notification_box {
+header .dropdown button i {
   color: var(---color-alert);
-  position: relative;
 }
 
-.notification_box:hover .option_menu {
-  background-color: var(---color-white);
-  border: 1px solid var(---color-secondary-dark);
-  display: flex !important;
-  flex-direction: column;
-  position: absolute;
-  bottom: -80px;
-  right: 10px;
+header .dropdown ul {
+  font-size: 0.8rem;
 }
 
 /* Main */
@@ -122,6 +115,10 @@ aside .admin_box:hover {
   font-weight: 400;
 }
 
+.my_badge:hover {
+  background-color: var(---color-primary-dark);
+}
+
 /* Lower dashboard */
 .lower_dashboard {
   background-color: var(---color-secondary);
@@ -132,6 +129,10 @@ aside .admin_box:hover {
   font-size: 0.8rem;
 }
 
+.lower_dashboard #faq .accordion-button:not(.collapsed) {
+  color: var(---color-primary);
+}
+
 .lower_dashboard #todo ul,
 .lower_dashboard #stats ul {
   border: 1px solid var(---color-secondary-dark);
@@ -139,6 +140,8 @@ aside .admin_box:hover {
 
 .my_avatar {
   height: 30px;
+  width: 30px;
+  border-radius: 50%;
 }
 
 /* Form */
